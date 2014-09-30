@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/commands/commands.iml" filepath="$PROJECT_DIR$/commands/commands.iml" />
+      <module fileurl="file://$PROJECT_DIR$/database-core/database-core.iml" filepath="$PROJECT_DIR$/database-core/database-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db-core/db-core.iml" filepath="$PROJECT_DIR$/db-core/db-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/presentation/presentation.iml" filepath="$PROJECT_DIR$/presentation/presentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shell/shell.iml" filepath="$PROJECT_DIR$/shell/shell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task-one.iml" filepath="$PROJECT_DIR$/task-one.iml" />
+    </modules>
+  </component>
+</project>
+
