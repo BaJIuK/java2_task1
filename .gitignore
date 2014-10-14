@@ -1,0 +1,7 @@
+*.iml
+.idea
+db-commands/target
+db-core/target
+fs-commands/target
+presentation/target
+shell/target

@@ -17,24 +17,42 @@
             <artifactId>shell</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
         <dependency>
             <groupId>ru.fizteh.java2.bajiuk</groupId>
-            <artifactId>commands</artifactId>
+            <artifactId>fs-commands</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
+        <dependency>
+            <groupId>ru.fizteh.java2.bajiuk</groupId>
+            <artifactId>db-commands</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>1.1.8.RELEASE</version>
+        </dependency>
+
     </dependencies>
 
-    <build> <plugins>
-        <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-            <version>1.1.6.RELEASE</version>
-            <executions>
-                <execution>
-                    <goals><goal>repackage</goal></goals>
-                </execution>
-            </executions>
-        </plugin>
-    </plugins></build>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.1.6.RELEASE</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

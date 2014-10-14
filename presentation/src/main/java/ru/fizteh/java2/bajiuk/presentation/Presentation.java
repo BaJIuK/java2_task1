@@ -1,28 +1,19 @@
 package ru.fizteh.java2.bajiuk.presentation;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import ru.fizteh.java2.bajiuk.commands.filesystem.*;
+import org.springframework.stereotype.Component;
 import ru.fizteh.java2.bajiuk.shell.Shell;
 
-import java.io.IOException;
+@Component
+public class Presentation implements CommandLineRunner {
 
-public class Presentation {
-    public static void main(final String[] args) throws IOException{
+    @Override
+    public void run(String[] args) {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(MyContext.class);
-        FilesystemContext context = new FilesystemContext();
-
         Shell shell = ctx.getBean(Shell.class);
-
-        shell.addCommand(new Ls(context));
-        shell.addCommand(new Pwd(context));
-        shell.addCommand(new Exit(context));
-        shell.addCommand(new Mkdir(context));
-        shell.addCommand(new Rm(context));
-        shell.addCommand(new Cp(context));
-        shell.addCommand(new Cd(context));
-        shell.addCommand(new Mv(context));
-
         shell.execute();
     }
+
 }

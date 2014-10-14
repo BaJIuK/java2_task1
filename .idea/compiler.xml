@@ -22,8 +22,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="commands" />
+        <module name="db-commands" />
         <module name="db-core" />
+        <module name="fs-commands" />
         <module name="presentation" />
         <module name="shell" />
       </profile>
